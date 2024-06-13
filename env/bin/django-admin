@@ -1,4 +1,4 @@
-#!/home/eraldo/AutoSale/env/bin/python3
+#!/home/eraldo/AutoSale/env/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
