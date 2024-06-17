@@ -1,0 +1,35 @@
+#header{
+  background-color: #B55FFE ;
+}
+
+div.breadcrumbs{
+  background-color: #538BFE;
+}
+
+.module h2, .module caption, .inline-group h2{
+  background-color: #B55FFE;
+}
+
+.button, input[type=submit], input[type=button], .submit-row input, a.button{
+  background-color: #4e5557;
+}
+
+.button:active, input[type=submit]:active, input[type=button]:active, .button:focus, input[type=submit]:focus, input[type=button]:focus, .button:hover, input[type=submit]:hover, input[type=button]:hover{
+  background-color: #538BFE;
+}
+
+.button.default, input[type=submit].default, .submit-row input.default{
+  background-color: #B55FFE;
+}
+
+.button.default:active, input[type=submit].default:active, .button.default:focus, input[type=submit].default:focus, .button.default:hover, input[type=submit].default:hover{
+  background-color: #B55FFE;
+}
+
+a:link, a:visited{
+  color: #B55FFE;
+}
+.theme-toggle svg.theme-icon-when-auto, .theme-toggle svg.theme-icon-when-dark, .theme-toggle svg.theme-icon-when-light{
+    color:#b55ffe;
+    fill:#fff;
+}
