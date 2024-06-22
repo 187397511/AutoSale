@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% load humanize %}
+{% block title %} Search results {% endblock %}
 {% block content %}
 <!-- Banner start -->
 <div class="sub-banner overview-bgi">
@@ -8,7 +9,7 @@
         <div class="breadcrumb-areas">
             <h1>Search Results</h1>
             <ul class="breadcrumbs">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
                 <li class="active">Search</li>
             </ul>
         </div>
@@ -115,7 +116,6 @@
         <!-- Main title -->
         <div class="main-title">
             <h1>Here's your <span>Cars</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div class="row">
           {% for car in cars %}

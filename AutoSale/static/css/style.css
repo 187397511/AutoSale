@@ -3947,7 +3947,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     margin-bottom: 0;
-    background: #202c54;
+    background: #232599;
     color: #fff;
 }
 
@@ -8152,7 +8152,7 @@ table {
     }
 
     .header-shrink .navbar-expand-lg .navbar-nav .nav-link {
-        color: #515151;
+        color: #fff;
     }
 
     .header-shrink .open-offcanvas {
@@ -9714,7 +9714,7 @@ table {
 
 @media (min-width: 180px){
     .header-shrink {
-        background: #fff!important;
+        background: #934cce!important;
         -webkit-transition: 0.5s;
         -moz-transition: 0.5s;
         -ms-transition: 0.5s;

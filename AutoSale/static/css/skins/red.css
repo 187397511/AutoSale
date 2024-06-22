@@ -405,7 +405,7 @@ footer .footer-item .contact-info li label a:hover {
 }
 
 .main-header .navbar-expand-lg .navbar-nav .nav-link:hover {
-    color:#934cce;
+    color:#ffc107;
 }
 
 .sh-3 .navbar-expand-lg .navbar-nav .nav-link:hover {
@@ -736,7 +736,7 @@ li.active.filtr-button.filtr a{
     }
 
     .main-header .navbar-default .nav > li > a:hover {
-        background:#934cce;
+        background:#ffc107;
     }
 
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
