@@ -3,6 +3,7 @@ from django.contrib import messages, auth
 from contactus.models import Contact
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.password_validation import validate_password
 # Create your views here.
 #
 #
@@ -27,6 +28,11 @@ def register(request):
         username = request.POST['username']
         email = request.POST['email']
         password = request.POST['password']
+        try:
+            validate_password(password)
+        except:
+            messages.error(request,'Weak password')
+            return redirect('register')
         confirm_password = request.POST['confirm_password']
         if password != confirm_password:
             messages.error(request,'passwords do not match')
