@@ -1,5 +1,5 @@
 databases:
-  - name: DATABASE_NAME
+  - name: autosale_db
     plan: free
     databaseName: autosale
     user: autosale
@@ -12,9 +12,9 @@ services:
     buildCommand: "./build.sh"
     startCommand: "python -m gunicorn AutoSale.asgi:application -k uvicorn.workers.UvicornWorker"
     envVars:
-      - key: DATABASE_URL
+      - key: postgres://autosale:secret@localhost:5432/autosale_db
         fromDatabase:
-          name: DATABASE_NAME
+          name: autosale_db
           property: connectionString
       - key: SECRET_KEY
         generateValue: true
