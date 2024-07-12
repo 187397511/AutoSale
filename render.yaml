@@ -1,8 +1,8 @@
 databases:
   - name: autosale_db
     plan: free
-    databaseName: AutoSale
-    user: postgres
+    databaseName: autosale
+    user: autosale
 
 services:
   - type: web
