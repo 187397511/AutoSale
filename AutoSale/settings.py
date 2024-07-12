@@ -90,19 +90,18 @@ WSGI_APPLICATION = 'AutoSale.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
-'''DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': config('DATABASE_NAME'),
-        'USER': config('DATABASE_USER'),
-        'PASSWORD': config('DATABASE_PASSWORD'),
-        'HOST': config('DATABASE_HOST'),
+#       'USER': config('DATABASE_USER'),
+#       'PASSWORD': config('DATABASE_PASSWORD'),
+#       'HOST': config('DATABASE_HOST'),
     }
-}'''
+}
 
-DATABASES = {'default': dj_database_url.config(default="postgres://" + config('DATABASE_USER') + ':' + config('DATABASE_PASSWORD') + '@' + config('DATABASE_HOST') + '/' + config('DATABASE_NAME'))}
-
+#DATABASES = {'default': dj_database_url.config(default="postgres://" + config('DATABASE_USER') + ':' + config('DATABASE_PASSWORD') + '@' + config('DATABASE_HOST') + '/' + config('DATABASE_NAME'))}
+DATABASES['default'] = dj_database_url.parse(config('DATABASE_URL'))
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
