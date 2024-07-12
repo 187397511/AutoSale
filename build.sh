@@ -10,3 +10,5 @@ python manage.py collectstatic --no-input
 
 # Apply any outstanding database migrations
 python manage.py migrate
+#deletes obsolete code in multiselect library
+sed -i '78,89d' /opt/render/project/src/.venv/lib/python3.11/site-packages/multiselectfield/db/fields.py
