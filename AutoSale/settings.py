@@ -155,7 +155,7 @@ MESSAGE_TAGS = {
 SITE_ID = 3
 
 #email
-EMAIL_HOST = 'mail.cock.li'
+EMAIL_HOST = 'mail.google.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
