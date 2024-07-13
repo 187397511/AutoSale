@@ -20,7 +20,7 @@ def inquiry(request):
         message = request.POST['message']
         if phone:
             try:
-                if len(phone)!=10 or not int(phone).is_integer():
+                if ('.' in phone) or len(phone)!=10 or not float(phone).is_integer():
                       messages.error(request,'enter correct phone no')
                       return redirect('/cars/'+car_id)
 
