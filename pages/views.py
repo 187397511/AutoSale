@@ -52,7 +52,8 @@ def contact_us(request):
                       messages.error(request,'enter correct phone no')
                       return redirect('contact us')
 
-            except:
+            except Exception as e:
+                    print(e)
                     messages.error(request,'enter correct phone no')
                     return redirect('contact us')
 
