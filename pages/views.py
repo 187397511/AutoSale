@@ -48,7 +48,7 @@ def contact_us(request):
         admin_email = User.objects.get(is_superuser=True).email
         if phone:
             try:
-                if len(phone)!=10 or not int(phone).is_integer():
+                if len(phone)!=10 or not float(phone).is_integer():
                       messages.error(request,'enter correct phone no')
                       return redirect('contact us')
 
